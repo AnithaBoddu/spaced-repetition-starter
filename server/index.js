@@ -5,7 +5,7 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const BearerStrategy = require('passport-http-bearer').Strategy;
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const secret = require('./secret');
+//const secret = require('./secret');
 const { User, Question } = require('./models');
 const app = express();
 
@@ -20,7 +20,7 @@ app.use(passport.initialize());
 passport.use(
     new GoogleStrategy({
         clientID:  '444740250195-l1ffmpv38gb4jebtladcmnlu6ab78fcn.apps.googleusercontent.com',
-        clientSecret: secret,
+        clientSecret: process.env.SECRET,
         callbackURL: `/api/auth/google/callback`
     },
     (accessToken, refreshToken, profile, cb) => {
