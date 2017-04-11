@@ -2,9 +2,16 @@ const express = require('express');
 const proxy = require('http-proxy-middleware');
 
 const app = express();
-const runServer = require('./server').runServer;
+//const runServer = require('./server').runServer;
 
 if (process.env.NODE_ENV === 'production') {
+    // Just run the server
+   // runServer(process.env.PORT || 8080);
+   // Change the cwd to server to mimic running directly
+    process.chdir('server');
+    // Only require inside the if block so we don't run the server code twice
+    // in development
+    const runServer = require('./server').runServer;
     // Just run the server
     runServer(process.env.PORT || 8080);
 }
@@ -21,3 +28,6 @@ else {
     }));
     app.listen(process.env.PORT || 8080);
 }
+
+
+

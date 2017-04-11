@@ -1,5 +1,173 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  background-color: #6D7993;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.center {
+	text-align: center;
+}
+
+.latin {
+	display: inline-block;
+
+}
+
+.english {
+	display: inline-block;
+
+}
+
+
+.daisy {
+  background-color: #9099A2;
+  margin-right: 5px;
+}
+
+a {
+  color: white;
+}
+
+.topBar {
+    width: 100%;
+    height: 70px;  
+    background-color: #96858F;
+    border-bottom-width: 3px;
+    border-bottom-color: #6D7993;
+    border-bottom-style: solid;
+    position: fixed;
+    display: inline-block;
+    background-size: cover;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-clip: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.top-right {
+  text-align: right;
+  display: inline-block;
+  margin-top: 15px;
+  position: absolute;
+  right: 5%;
+
+}
+
+.top-left {
+  display: inline-block;
+  margin-top: 3px;
+  position: absolute;
+  left: 5%;
+
+}
+
+.top-center {
+  text-align: center;
+  display: inline-block;
+  margin-top: -10px;
+  position: absolute;
+  right: 42%;
+
+}
+
+.card {
+  background-color: white;
+  height: 300px;
+  width: 500px;
+  color: black;
+  text-align: center;
+  position: absolute;
+  left: 37%;
+  font-size: 36px;
+  vertical-align: center;
+  margin-top: 30px;
+  background-color: #96858F;
+}
+
+.question {
+  margin-top: 120px;
+  color: white;
+
+}
+
+.latin {
+  font-size: 40px;
+  margin-top: 100px;
+}
+
+.english {
+  text-align: center;
+  position: absolute;
+  left: 44%;  
+  margin-top: 350px;
+  font-size: 40px;
+}
+.englishtext {
+  font-size: 40px;
+}
+
+input {
+  display: block;
+  font-size: 14px;
+  width:240px;
+  margin: 10px auto;
+  padding: 10px 8px 10px 8px;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0, .55), 0px 1px 1px rgba(255,255,255,.5);
+  border: 1px solid #666;
+}
+
+
+input {
+  opacity: 0.5;
+}
+
+input:hover,
+input:focus {
+  opacity: .7;
+  color:#08c;
+  border: 1px solid #08c;
+   box-shadow: 0px 1px 0px rgba(255,255,255,.25),inset 0px 3px 6px rgba(0,0,0,.25);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  box-shadow: inset 0 1px 2px rgba(255,255,255, .35), 0px 1px 15px rgba(0,246,255,.5);
+  border: 1px solid #08c;
+  outline: none;
+}
+
+.current-score {
+  text-align: center;
+  position: absolute;
+  left: 5%;  
+  margin-top: 100px;  
+  font-size: 20px;
+}
+
+
+.lastingLatium {
+  font-size: 50px;
+  font-style: italic;
+}
+
+.spaced {
+  margin-top: 100px;
+  color: white;
+}
+
+.spacedtop {
+  margin-top: 200px;
+}
+
+.biggest {
+  font-style: italic;
+  font-size: 70px;
+}
+
+.spacedsmall {
+  margin-top: 20px;
 }
