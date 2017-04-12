@@ -22,8 +22,10 @@ passport.use(
         clientID:  '444740250195-l1ffmpv38gb4jebtladcmnlu6ab78fcn.apps.googleusercontent.com',
         clientSecret: 'Y-5PC-vGSGKaDLonlO27NlPE',
         callbackURL: `/api/auth/google/callback`
+        
     },
     (accessToken, refreshToken, profile, cb) => {
+        console.log(process.env.SECRET,  'SECRET key from heroku');
         // Job 1: Set up Mongo/Mongoose, create a User model which store the
         // google id, and the access token
         // Job 2: Update this callback to either update or create the user
@@ -34,7 +36,7 @@ passport.use(
         // };
         // return cb(null, user);
         let questionHistory = [];
-
+       
         Question
             .find()
             .exec()
