@@ -30,11 +30,11 @@ Directory layout
 │   └── scss    SASS stylesheets
 ├── server      Server-side code
 
-Deployment
+## Deployment
 
 Requires the Heroku CLI client.
 
-Setting up the project on Heroku
+## Setting up the project on Heroku
 
 - Move into the project directory: cd ~/YOUR_PROJECTS_DIRECTORY/YOUR_PROJECT_NAME
 - Create the Heroku app: heroku create PROJECT_NAME
@@ -42,7 +42,8 @@ Setting up the project on Heroku
 - Deploying to Heroku
 
 Push your code to Heroku: git push heroku master
-Create a new mlab database
+
+## Create a new mlab database
 
 - Log in to https://mlab.com/
 - Create a new database by pressing Create new
@@ -51,7 +52,7 @@ Create a new mlab database
 - Scroll down to Database Name and enter your name of choice
 - Press Create new MongoDB deployment
 
-Link your mlab database to your project
+## Link your mlab database to your project
 
 - On your mlab dashboard, click the database that you would like to use
 - Press Users
