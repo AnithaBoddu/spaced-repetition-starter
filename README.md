@@ -21,9 +21,13 @@ The spaced repetition algorithm was implemented to generate new questions based 
 - Starts a server running at http://localhost:8080
 - Automatically rebuilds when any of your files change
 
-Directory layout
+## Directory layout
 
-.
+* ├── client      Client-side code
+│   ├── assets  Images, videos, etc.
+│   ├── js      JavaScript
+│   └── scss    SASS stylesheets
+├── server      Server-side code
 
 
 ## Deployment
