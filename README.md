@@ -12,9 +12,9 @@ The spaced repetition algorithm was implemented to generate new questions based 
 
 
 
-Getting started
+- Getting started
 
-Working on the project
+- Working on the project
 
 Move into the project directory: cd ~/YOUR_PROJECTS_DIRECTORY/YOUR_PROJECT_NAME
 Run the development task: npm run dev
@@ -29,11 +29,11 @@ Directory layout
 │   └── scss    SASS stylesheets
 ├── server      Server-side code
 
-Deployment
+- Deployment
 
-Requires the Heroku CLI client.
+- Requires the Heroku CLI client.
 
-Setting up the project on Heroku
+- Setting up the project on Heroku
 
 Move into the project directory: cd ~/YOUR_PROJECTS_DIRECTORY/YOUR_PROJECT_NAME
 Create the Heroku app: heroku create PROJECT_NAME
