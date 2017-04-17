@@ -16,9 +16,12 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
      
-<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>     
+<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>  
 
-<link rel="stylesheet/less" type="text/css" href="/styles.less" /> 
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="{{name}}.{{version}}{{#production}}.min{{/production}}.css">   
+
+<!--<link rel="stylesheet/less" type="text/css" href="/styles.less" /> -->
 
     <title>Lasting Latin</title>
   </head>
@@ -31,7 +34,7 @@
       You can add webfonts, meta tags, or analytics to this file.
       The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start`.
+      To begin the development, run `npm run dev`.
       To create a production bundle, use `npm run build`.
     -->
   </body>

@@ -1,7 +1,7 @@
 import React from 'react';
 import * as actions from '../actions/index';
 import { connect } from 'react-redux';
-import store from '../store';
+//import store from '../store';
 //import {SERVER_ROOT} from '../config';
 
 export class TopNav extends React.Component {
@@ -37,16 +37,18 @@ export class TopNav extends React.Component {
   return (
         <div> 
             <div className="topBar">
-                <div className="top-left">
-                    <h3>Welcome, {userName}</h3>
-                </div>
+                   <div className="top-right">
+                    <button className="start-over btn daisy"   ><a className="center"  onClick={this.startOver} >Start Over</a></button>
+                    <button className="log-out btn daisy" ><a className="center"  onClick={this.updateUserInDatabase} href='/api/auth/logout'>Log Out</a></button>
+                </div>    
                 <div className="top-center">
                     <h1 className="lastingLatium">Lasting Latium</h1>
                 </div>
-                <div className="top-right">
-                    <button className="start-over btn daisy"   ><a className="center"  onClick={this.startOver} >Start Over</a></button>
-                    <button className="log-out btn daisy" ><a className="center"  onClick={this.updateUserInDatabase} href='/api/auth/logout'>Log Out</a></button>
-                </div>          
+                <div className="top-left">
+                    <h3>Welcome, {userName}</h3>
+                </div>
+                
+                   
             </div>           
             <div className="current-score">       
                 <p >Your current score is {currentSessionCorrectCount} out of {currentSessionQuestionCount} </p>
@@ -75,6 +77,6 @@ export default connect(mapStateToProps)(TopNav);
 
 
 
-// -Styling
+
 
 

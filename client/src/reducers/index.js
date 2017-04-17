@@ -2,7 +2,7 @@ import update from 'immutability-helper';
 import * as actions from '../actions/index';
 import store from '../store';
 import { spacedAlgo } from '../algorithm.js';
-import { insertionSort } from '../algorithm.js';
+//import { insertionSort } from '../algorithm.js';
 
 
 const initialState = {
@@ -27,8 +27,7 @@ const initialState = {
 export const mainReducer = (state= initialState, action) => {
     if (action.type === actions.MAP_USER_TO_STORE) {
         setTimeout(()=> { console.log(store.getState(), "THIS IS THE MAP_USER_TO_STORE GETSTATE()")}, 3000);
-     //   console.log('QUESTION HISTORY IN REDUCER ', action.userData.questionHistory);
-     //   console.log('QUESTION HISTORY IN REDUCER  QUESTION ', action.userData.questionHistory[0].question);
+     
         return update(state, {
             _id: {$set: action.userData._id},
             googleId: {$set: action.userData.googleId},
@@ -47,7 +46,7 @@ export const mainReducer = (state= initialState, action) => {
         
         let sortedquestionHistory = spacedAlgo(action.questionHistory, action.userAnswer)
         console.log('THIS SHOULD BE A SORTED ARRAY ', sortedquestionHistory)
-        // returns a sorted questionHistory array with updated mValue
+       
         return update(state, {
             questionHistory: {$set: sortedquestionHistory}
         })
@@ -118,14 +117,4 @@ export const mainReducer = (state= initialState, action) => {
 
 
 
-// -Render items in components 
-//     -question, session questions, session correct answers, name, ...? answer, right/wrong (after submit)
-// -Answer input
-//     -dispatch question counter
-//     -dispatch algo action
-//     -dispatch correct counter (if correct)
-// -Update DB on logout    
-//     -dispatch async action (get or put)?
-//     -update user document in DB to reflect new mvalues and answerHistory
-// -Styling
 

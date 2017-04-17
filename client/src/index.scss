@@ -37,15 +37,15 @@ h1 {
 
 h3 {
   text-align: center;
-  font-size: 40px;
+  font-size: 20px;
   color: white;
    }
 
 .current-score{
-     color:#FFE4B5;
+     color:white;
    }
 
-.center spaced big {
+.g-signin2 {
   float: right; }
 
 input {
@@ -209,15 +209,10 @@ div {
     padding: 8px; } 
 
 .lastingLatium{
-
   font-size:20px;
   text-align: left;
 }
 
-.center spaced big{
-  text-align: center;
-
-}
 .top-right {
   text-align: right;
   display: inline-block;
@@ -226,10 +221,7 @@ div {
  
 
 }
-
-}
-
-
+    }
 
 @media only screen and (width: 1024px) {
       h1 {

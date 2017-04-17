@@ -2,14 +2,12 @@ import React from 'react';
 import * as Cookies from 'js-cookie';
 import { connect } from 'react-redux';
 import * as actions from '../actions/index';
-import Store from '../store';
+//import Store from '../store';
 
 class QuestionPage extends React.Component {
     constructor(props) {
         super(props);
-        // this.state = {
-        //     questions: []
-        // };
+        
     }
 
     componentDidMount() {
@@ -24,36 +22,22 @@ class QuestionPage extends React.Component {
             }
             return res.json();
         }).then(userData =>
-       // console.log('USER DATA WE NEED THIS TO DEEP COPY ', userData.questionHistory[0].question)
            this.props.dispatch(actions.mapUserToStore(userData))
-            )
-
-        // then(questions =>
-        //     this.setState({
-        //         questions
-        //     })
-        // );
+        )
     }
 
     render() {
-        /*const questions = this.state.questions.map((question, index) =>
-            <li key={index}>{question}</li>
-        );
-
-        return (
-            <ul className="question-list">
-                {questions}
-            </ul>
-        );*/
-         let question = this.props.questionHistory[0].question;
-        let answer = this.props.questionHistory[0].answer;
+    
+        let question = this.props.questionHistory[0].question;
+        //let answer = this.props.questionHistory[0].answer;
 
         return (
             
-            <div className="center">
-            <h3 className="latin">Latin</h3>
+            <div className="center">  
             <div className="question-list card center">
-                <div className="question">{question}</div>
+                <div className="question">
+                    <h3 className="latin">What do you call '{question}' in English ? </h3>
+                </div>
             </div>
             </div>
             
