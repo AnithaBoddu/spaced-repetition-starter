@@ -14,7 +14,7 @@ The spaced repetition algorithm was implemented to generate new questions based 
 
 # Getting started
 
- Working on the project
+ ## Working on the project
 
 - Move into the project directory: cd ~/YOUR_PROJECTS_DIRECTORY/YOUR_PROJECT_NAME
 - Run the development task: npm run dev
